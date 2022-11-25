@@ -2510,6 +2510,7 @@
 		03DE7B6F1C84DEF800F789BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2529,6 +2530,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
 				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.KSCrash;
 				PRODUCT_NAME = KSCrash;
 				SKIP_INSTALL = YES;
@@ -2542,6 +2544,7 @@
 		03DE7B701C84DEF800F789BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
@@ -2562,6 +2565,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
 				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.KSCrash;
 				PRODUCT_NAME = KSCrash;
 				SKIP_INSTALL = YES;
@@ -2721,6 +2725,7 @@
 		CB6D134317EB749A00BC2C04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
 				DSTROOT = /tmp/KSCrashLib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KSCrash/KSCrash-Prefix.pch";
@@ -2728,6 +2733,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				OTHER_CFLAGS = "-fembed-bitcode";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
@@ -2738,9 +2744,11 @@
 		CB6D134417EB749A00BC2C04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
 				DSTROOT = /tmp/KSCrashLib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KSCrash/KSCrash-Prefix.pch";
+				OTHER_CFLAGS = "-fembed-bitcode";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
@@ -2789,6 +2797,7 @@
 		EDF2BF1F1CCF15AD004BADF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2809,6 +2818,7 @@
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
 				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.KSCrash;
 				PRODUCT_NAME = KSCrash;
 				SKIP_INSTALL = NO;
@@ -2822,6 +2832,7 @@
 		EDF2BF201CCF15AD004BADF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
@@ -2843,6 +2854,7 @@
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
 				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.KSCrash;
 				PRODUCT_NAME = KSCrash;
 				SKIP_INSTALL = NO;

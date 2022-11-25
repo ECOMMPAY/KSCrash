@@ -22,3 +22,4 @@ Thumbs.db
 *.xccheckout
 *.xcscmblueprint
 Carthage/Build
+iOS/KSCrash-iOS.xcodeproj/project.xcworkspace/xcshareddata
