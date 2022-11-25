@@ -34,6 +34,7 @@
 @implementation KSCrashInstallationConsole
 
 @synthesize printAppleFormat = _printAppleFormat;
+@synthesize isMuted = _isMuted;
 
 + (instancetype) sharedInstance
 {
@@ -70,10 +71,14 @@
                         nil];
     }
 
-    return [KSCrashReportFilterPipeline filterWithFilters:
-            formatFilter,
-            [KSCrashReportSinkConsole new],
-            nil];
+    if(self.isMuted) {
+        return formatFilter;
+    } else {
+        return [KSCrashReportFilterPipeline filterWithFilters:
+                formatFilter,
+                [KSCrashReportSinkConsole new],
+                nil];
+    }
 }
 
 @end

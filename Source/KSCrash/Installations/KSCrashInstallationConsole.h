@@ -31,6 +31,7 @@
 @interface KSCrashInstallationConsole : KSCrashInstallation
 
 @property(nonatomic,readwrite) BOOL printAppleFormat;
+@property(nonatomic,readwrite) BOOL isMuted;
 
 + (instancetype) sharedInstance;
 
